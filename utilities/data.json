@@ -1,0 +1,29 @@
+{
+    "table": [
+        {
+            "Id": 3.1,
+            "Company": "Ortel",           
+            "Price": 50
+        },
+        {
+            "Id": 3.2,
+            "Company": "Lofan",            
+            "Price": 25
+        },
+        {
+            "Id": 3.3,
+            "Company": "Lyca",          
+            "Price": 10
+        },
+        {
+            "Id": 3.4,
+            "Company": "India",       
+            "Price": 5
+        },
+        {
+            "Id": 4.1,
+            "Company": "Lyka",       
+            "Price": 6
+        }
+    ]
+}

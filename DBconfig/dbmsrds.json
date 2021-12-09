@@ -1,0 +1,7 @@
+{
+    "Host" : "free-version.cpgzetacyxbf.us-east-2.rds.amazonaws.com", 
+    "port" : "3306",
+    "User" : "nrvaka",   
+    "Password" : "reddyreddy",  
+    "Database": "nrvaka"
+}        
