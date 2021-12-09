@@ -34,8 +34,13 @@ app.use(cors({
 }));
 app.use(cookieParse());
 
-app.use('/api/products', productsRouter); // Baseline Address and hear after everything is added
-app.use('/api/orders', orderRouter); // Baseline Address and hear after everything is added
+// *** For Local Host *** 
+// app.use('/api/products', productsRouter); // Baseline Address and hear after everything is added
+// app.use('/api/orders', orderRouter); // Baseline Address and hear after everything is added
+
+// *** For Remote Host ***
+ app.use('/products', productsRouter); // Baseline Address and hear after everything is added
+ app.use('/orders', orderRouter); // Baseline Address and hear after everything is added
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT);
