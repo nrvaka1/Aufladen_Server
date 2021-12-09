@@ -39,8 +39,12 @@ app.use(cookieParse());
 // app.use('/api/orders', orderRouter); // Baseline Address and hear after everything is added
 
 // *** For Remote Host ***
- app.use('/products', productsRouter); // Baseline Address and hear after everything is added
- app.use('/orders', orderRouter); // Baseline Address and hear after everything is added
+app.use('/api/products', productsRouter); // Baseline Address and hear after everything is added
+app.use('/api/orders', orderRouter); // Baseline Address and hear after everything is added
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT);
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT);
+const PORT = process.env.NODE_ENV === 'production' ? 80 : 4000;
+const server = app.listen(PORT, function () {
+    console.log('Server listening on port ' + PORT);
+});
