@@ -76,7 +76,7 @@ router.post('/checkout', async (req, res) => {
 
         paypal.payment.create(create_payment_json, function (error, payment) {  //https://developer.paypal.com/docs/checkout/reference/server-integration/get-transaction/
             //   console.log(" Create : " + JSON.stringify(payment));
-            //    console.log(" Create : " + payment.id);
+            console.log(" Create : " + payment.id);
             if (error) {
                 throw error;
             } else {
