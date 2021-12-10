@@ -39,8 +39,8 @@ app.use(cookieParse());
 // app.use('/api/orders', orderRouter); // Baseline Address and hear after everything is added
 
 // *** For Remote Host ***
-app.use('/api', productsRouter); // Baseline Address and hear after everything is added
-app.use('/api', orderRouter); // Baseline Address and hear after everything is added
+app.use('/api/products', productsRouter); // Baseline Address and hear after everything is added
+app.use('/api/orders', orderRouter); // Baseline Address and hear after everything is added
 
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT);
