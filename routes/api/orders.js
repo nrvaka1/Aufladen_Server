@@ -55,7 +55,7 @@ router.post('/checkout', async (req, res) => {
             },
             "redirect_urls": {
                 //    "return_url": "http://127.0.0.1:4000/api/orders/paypalsuccess", // For Local Server 
-                "return_url": "/api/orders/paypalsuccess",     // For Remote Server 
+                "return_url": "/orders/paypalsuccess",     // For Remote Server 
                 // "return_url": "http://localhost:4200/sucess",
                 "cancel_url": "http://127.0.0.1:4000/api/cancel"
             },
