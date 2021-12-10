@@ -54,7 +54,7 @@ router.post('/checkout', async (req, res) => {
                 "payment_method": "paypal"
             },
             "redirect_urls": {
-                "return_url": "http://127.0.0.1:4000/api/orders/paypalsuccess",
+                "return_url": "/api/orders/paypalsuccess",
                 // "return_url": "http://localhost:4200/sucess",
                 "cancel_url": "http://127.0.0.1:4000/api/cancel"
             },
