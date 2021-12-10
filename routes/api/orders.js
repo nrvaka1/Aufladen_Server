@@ -52,9 +52,9 @@ router.post('/checkout', async (req, res) => {
                 "payment_method": "paypal"
             },
             "redirect_urls": {
-                "return_url": "http://localhost:3000/api/orders/paypalsuccess",
+                "return_url": "http://127.0.0.1:4000/api/orders/paypalsuccess",
                 // "return_url": "http://localhost:4200/sucess",
-                "cancel_url": "http://localhost:3000/api/cancel"
+                "cancel_url": "http://127.0.0.1:4000/api/cancel"
             },
             "transactions": [{
                 "item_list": {
@@ -76,6 +76,8 @@ router.post('/checkout', async (req, res) => {
 
         paypal.payment.create(create_payment_json, function (error, payment) {  //https://developer.paypal.com/docs/checkout/reference/server-integration/get-transaction/
             //   console.log(" Create : " + JSON.stringify(payment));
+            console.log(" CLIENT_ID_PAYPAL : " + process.env.CLIENT_ID_PAYPAL);
+            console.log(" CLIENT_SECRET_PAYPAL : " + process.env.CLIENT_SECRET_PAYPAL);
             console.log(" Create : " + payment.id);
             if (error) {
                 throw error;
