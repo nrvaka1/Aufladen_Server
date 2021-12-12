@@ -14,10 +14,10 @@ var ProductName = '';
 
 paypal.configure({
     'mode': 'sandbox', //sandbox or live
-      'client_id': process.env.CLIENT_ID_PAYPAL,
-      'client_secret': process.env.CLIENT_SECRET_PAYPAL
-   // 'client_id': "AWJRvh2BC13thsrsrt83lVKl2NTrlIOwvB6kFWmTK_Oj3z5m7nbrDqKpdEOLVQwNaHooqUHaGL-xAOz5",
-    // 'client_secret': "EHLnEzsNF5BzHseR1mP0J7hHvAbcBbzemVhn8wHgW9YFTpr-IIAs-Cg9uQM6OGZGsgaf-6S0wkpEDSKd"
+    //  'client_id': process.env.CLIENT_ID_PAYPAL,
+    //  'client_secret': process.env.CLIENT_SECRET_PAYPAL
+    'client_id': "AWJRvh2BC13thsrsrt83lVKl2NTrlIOwvB6kFWmTK_Oj3z5m7nbrDqKpdEOLVQwNaHooqUHaGL-xAOz5",
+    'client_secret': "EHLnEzsNF5BzHseR1mP0J7hHvAbcBbzemVhn8wHgW9YFTpr-IIAs-Cg9uQM6OGZGsgaf-6S0wkpEDSKd"
 });
 
 // Stripe 
@@ -54,10 +54,10 @@ router.post('/checkout', async (req, res) => {
                 "payment_method": "paypal"
             },
             "redirect_urls": {
-                 "return_url": "http://127.0.0.1:4000/api/orders/paypalsuccess", // For Local Server 
+                // "return_url": "http://127.0.0.1:4000/api/orders/paypalsuccess", // For Local Server 
                 //  "return_url": "/success",
-               // "return_url": "/api/orders/paypalsuccess", // For Local Server 
-                // "return_url": "http://ec2-18-220-102-250.us-east-2.compute.amazonaws.com/api/orders/paypalsuccess",     // For Remote Server 
+                // "return_url": "/api/orders/paypalsuccess", // For Local Server 
+                "return_url": "http://ec2-13-58-9-112.us-east-2.compute.amazonaws.com/api/orders/paypalsuccess",     // For Remote Server 
                 // "return_url": "http://localhost:4200/sucess",
                 "cancel_url": "http://127.0.0.1:4000/api/cancel"
             },
