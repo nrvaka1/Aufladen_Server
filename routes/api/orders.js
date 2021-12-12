@@ -14,10 +14,10 @@ var ProductName = '';
 
 paypal.configure({
     'mode': 'sandbox', //sandbox or live
-    //  'client_id': process.env.CLIENT_ID_PAYPAL,
-    //  'client_secret': process.env.CLIENT_SECRET_PAYPAL
-    'client_id': "AWJRvh2BC13thsrsrt83lVKl2NTrlIOwvB6kFWmTK_Oj3z5m7nbrDqKpdEOLVQwNaHooqUHaGL-xAOz5",
-    'client_secret': "EHLnEzsNF5BzHseR1mP0J7hHvAbcBbzemVhn8wHgW9YFTpr-IIAs-Cg9uQM6OGZGsgaf-6S0wkpEDSKd"
+      'client_id': process.env.CLIENT_ID_PAYPAL,
+      'client_secret': process.env.CLIENT_SECRET_PAYPAL
+   // 'client_id': "AWJRvh2BC13thsrsrt83lVKl2NTrlIOwvB6kFWmTK_Oj3z5m7nbrDqKpdEOLVQwNaHooqUHaGL-xAOz5",
+    // 'client_secret': "EHLnEzsNF5BzHseR1mP0J7hHvAbcBbzemVhn8wHgW9YFTpr-IIAs-Cg9uQM6OGZGsgaf-6S0wkpEDSKd"
 });
 
 // Stripe 
