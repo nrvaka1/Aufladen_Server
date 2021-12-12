@@ -76,7 +76,7 @@ module.exports = class PinGetter {
                         "Pin": res_dataa.data.pinslist[0].pinnumber,
                     });
 
-                    execute_res.redirect('http://localhost:4200/sucess/?' + query);  // redirect to angualr page
+                    execute_res.redirect('http://ec2-13-58-9-112.us-east-2.compute.amazonaws.com/sucess/?' + query);  // redirect to angualr page
                     console.log("Passed Out " +  res_dataa.data.pinslist[0].pinnumber);
                 });
 
