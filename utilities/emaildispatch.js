@@ -49,7 +49,7 @@ module.exports = class EmailDispatch {
             attachments: [
                 {
                     filename: 'Invoice.pdf',
-                    path: 'assets/INVoice.pdf',
+                    path: 'assets/InVoice.pdf',
                     contentType: 'application/pdf'
                 }
             ]
