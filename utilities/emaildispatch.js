@@ -15,7 +15,8 @@ module.exports = class EmailDispatch {
             service: 'gmail',
             auth: {
                 user: 'nrvaka1@gmail.com',
-                pass: 'reddy@1234'
+                pass: 'gjytgvvcutsfenlf'
+                // pass: 'reddy@1234'
             },
             tls: {
                 rejectUnauthorized: false
@@ -23,6 +24,7 @@ module.exports = class EmailDispatch {
         });
 
         // Tutorial: Send Html & attachment tutorials -- https://www.youtube.com/watch?v=c7QscDpiS5Q&ab_channel=S.G.Codes
+        // https://stackoverflow.com/questions/51980436/nodemailer-throws-error-invalid-login-534-5-7-14
 
         var mailOptions = {
             from: 'nrvaka1@gmail.com',
